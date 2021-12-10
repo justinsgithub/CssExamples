@@ -1,9 +1,26 @@
-const test = () => {return "testing"};
+const apiEndpoint = 'https://justinsgithub-portfolio.vercel.app'
 
-
-async function getRequest(this_url) {
-    response = await fetch(this_url)
-    return await response.json 
+async function logRequest (thisUrl) {
+  const response = await fetch(thisUrl)
+  const data = await response.json()
 }
 
-//console.log(getRequest(detaEndpoint))
+
+logRequest(apiEndpoint)
+
+/*
+const test = () => {
+  return 'testing'
+} */
+
+/*
+async function postRequest (thisUrl, thisData) {
+  const fetchData = {
+    method: 'POST',
+    body: thisData,
+    headers: new Headers()
+  }
+  const response = await fetch(thisUrl, fetchData)
+  const data = await response.json()
+  console.log(data)
+} */
