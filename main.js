@@ -1,4 +1,5 @@
-const apiEndpoint = 'https://justinsgithub-portfolio.vercel.app/api/hello'
+/*
+const apiEndpoint = ''
 
 async function logRequest (thisUrl) {
   fetch(thisUrl)
@@ -7,7 +8,6 @@ async function logRequest (thisUrl) {
 
 logRequest(apiEndpoint)
 
-/*
 const test = () => {
   return 'testing'
 } */
